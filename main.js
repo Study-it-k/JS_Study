@@ -9,7 +9,6 @@
         var m2 = document.getElementById("phone2");
         var m3 = document.getElementById("phone3");
 
-        var phoneCheck = /^[0-9]{1}[0-9]{1,3}/;
 
         if (id.value == "") {
             alert("아이디가 입력되지 않았습니다.");
@@ -87,21 +86,6 @@
             return false;
         }
 
-        if(!phoneCheck.test(m2.value))
-        {
-            alert("휴대폰 번호는 숫자로만 입력하세요");
-            m2.focus();
-            return false;
-        }
-
-        
-        if(!phoneCheck.test(m3.value))
-        {
-            alert("휴대폰 번호는 숫자로만 입력하세요");
-            m3.focus();
-            return false;
-        }
-
         return true;    
     }
 
@@ -127,6 +111,8 @@
         {
             sign.disabled = false;
         }
+
+        // 오류발생 해결책 연구필요
         if (sign.disabled = false)
         {
             sign.disabled = true;
