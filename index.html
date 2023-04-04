@@ -38,6 +38,19 @@
                     <input type="email" id="email" name="email" placeholder="이메일" title="이메일 입력">
                 </li>
                 <li>
+                    <label for="call" class="label" title="연락처 입력">연락처</label>
+                    <select name="call1" id="call">
+                        <option value="02" selected>02</option>
+                        <option value="031">031</option>
+                        <option value="032">032</option>
+                        <option value="041">041</option>
+                        <option value="043">043</option>
+                        <option value="064">064</option>
+                    </select>
+                    <input type="text" id="call2" name="call2" placeholder="앞번호 입력" >
+                    <input type="text" id="call3" name="call3" placeholder="뒷번호 입력" >
+                </li>
+                <li>
                     <label for="phone" class="label" title="휴대폰 번호를 4글자씩 입력하세요">휴대폰</label>
                     <select name="phone1" id="phone1">
                         <option value="010" selected>010</option>
@@ -47,8 +60,13 @@
                         <option value="018">018</option>
                         <option value="019">019</option>
                     </select>
-                    <input type="text" id="phone2" name="phone3" placeholder="앞번호 입력" title="휴대폰 번호를 4글자씩 입력하세요">
+                    <input type="text" id="phone2" name="phone2" placeholder="앞번호 입력" title="휴대폰 번호를 4글자씩 입력하세요">
                     <input type="text" id="phone3" name="phone3" placeholder="뒷번호 입력" title="휴대폰 번호를 4글자씩 입력하세요">
+                    <button onclick="AuNum()">인증하기</button>  
+
+                </li>
+                <li>
+                    <input type="text" id="aunum"><button id="aumumBtn" onclick="AuNumCp()" disabled>인증확인</button>
                 </li>
                 <!-- <li>
                 <label for="place" class="label" title="희망지역 선택">관심지역</label>

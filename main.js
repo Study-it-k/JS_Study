@@ -92,33 +92,36 @@
     function agreeCheck()
     {
         var agree = document.getElementById("agree1");
-        var tf = agree.checked;
-        if (tf = true)
+        var sign = document.getElementById("sign");
+        if (agree.checked)
         {
-            signCheck()
+            sign.disabled=false;
         }
-        if (tf = false)
+        else
         {
-            signCheck();
+            sign.disabled=true;
         }
+  
 
     }
     
-    function signCheck()
-    {
-        var sign = document.getElementById("sign");
-        if (sign.disabled = true)
-        {
-            sign.disabled = false;
-        }
 
-        // 오류발생 해결책 연구필요
-        if (sign.disabled = false)
-        {
-            sign.disabled = true;
-        }
+    function AuNum()   //수정중
+    {
+        var Btn = document.getElementById("aumumBtn");
+
+        let numBox = Math.random();
+        alert(numBox);
+        setTimeout(3);
+
+        // if
+        Btn.disabled = false;
     }
 
+    function AuNumCp()  // 수정중
+    { 
+        alert("인증 되었습니다.")
+    }
    
 
 

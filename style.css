@@ -23,7 +23,7 @@ h1 {
     margin-top: 50px;
     border: 1px solid;
     /* width: 700px;*/
-    height: 550px; 
+    height: 600px; 
     /* box-shadow: 0px 0px 20px yellowgreen; */
     background-color: #f5f5dc;
 }
@@ -44,6 +44,30 @@ label {
     margin-left: 5px;
 }
 
+#call2 {
+    width: 100px;
+}
+
+#call3 {
+    width: 100px;
+}
+
+#phone2 {
+    width: 100px;
+}
+
+#phone3 {
+    width: 100px;
+}
+
+#aunum {
+    margin-left:185px;
+}
+
+#aumumBtn {
+    margin-left: 10px;
+}
+
 #place5 {
     margin-top: 20px;
     margin-left: 190px;
@@ -58,7 +82,7 @@ label {
 #sign {
     margin-left: 150px;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 300px;
     height: 50px;
 }
@@ -66,3 +90,4 @@ label {
 #mli {
     height : 50px;
 }
+
