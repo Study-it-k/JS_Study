@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+
+    grid-template-columns: repeat(4, 50px);
+    gap: 1px;
+    background: purple;
+    padding: 1px;
+    border-radius: 5px;
+}
